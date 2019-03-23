@@ -1,0 +1,211 @@
+﻿============Observation Value
+
+<http://www.example.org/ov/remotex12y>
+      a       <http://spitfire-project.eu/ontology/ns/OV> ;
+      <http://purl.org/NET/corelf#rt>
+              "22846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/tEnd>
+              "10321"^^<http://www.w3.org/2001/XMLSchema#long> ;
+      <http://spitfire-project.eu/ontology/ns/tStart>
+              "5800"^^<http://www.w3.org/2001/XMLSchema#long> ;
+      <http://spitfire-project.eu/ontology/ns/value>
+              "12.4"^^<http://www.w3.org/2001/XMLSchema#double> , "21.9"^^<http://www.w3.org/2001/XMLSchema#double> , "24.5"^^<http://www.w3.org/2001/XMLSchema#double> , "88.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+
+============Device (Sensing Devices, Sensors, etc.)
+
+<http://www.example.org/device/remotea12b>
+      a       <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+      <http://purl.org/NET/corelf#bn>
+              <http://www.example2.org/device/> ;
+      <http://purl.org/NET/corelf#bovn>
+              <http://www.example1.org/ov/> ;
+      <http://purl.org/NET/corelf#bt>
+              "12-08-28T19:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/obs>
+           <http://localhost:8182/ld4s/resource/property/temperature> ;
+      <http://spitfire-project.eu/ontology/ns/uom>
+              <http://localhost:8182/ld4s/resource/uom/centigrade> ;
+      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/hasLocation>
+              <http://localhost:8182/ld4s/resource/location/patras> ;
+      <http://www.w3.org/ns/prov#wasGeneratedBy>
+              <http://localhost:8182/ld4s/resource/people/manfredhauswirth> .
+
+
+
+============Sensor Temporal Properties
+
+<http://www.example.org/tps/remotea12b>
+      a       <http://spitfire-project.eu/ontology/ns/SensorTemporalProperty> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest>
+              <http://localhost:8182/ld4s/resource/property/water> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/netLink>
+              "219" , "887" , "124" , "245" ;
+      <http://spitfire-project.eu/ontology/ns/netRole>
+              <http://www.example.org/role/clusterhead> ;
+      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/hasLocation>
+              <http://localhost:8182/ld4s/resource/location/38.24444_21.73444> .
+
+============Platforms (Testbeds, etc.)
+
+<http://www.example.org/platform/remotea12b>
+      a       <http://spitfire-project.eu/ontology/ns/sn/Testbed> ;
+      <http://purl.org/NET/corelf#bn>
+              <http://www.example2.org/platform/> ;
+      <http://purl.org/NET/corelf#rt>
+              "12-08-28T19:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/feed>
+              <http://maps.google.com/maps?q=http://uberdust.cti.gr/rest/testbed/1/kml> , <http://uberdust.cti.gr/rest/testbed/1/kml> , <http://uberdust.cti.gr/rest/testbed/1/georss> , <http://maps.google.com/maps?q=http://uberdust.cti.gr/rest/testbed/1/georss> ;
+      <http://spitfire-project.eu/ontology/ns/status>
+              <http://www.example.org/testbed/status/a12b> ;
+      <http://spitfire-project.eu/ontology/ns/temporal>
+              "id789" , "id123" , "id101" , "id456" ;
+      <http://spitfire-project.eu/ontology/ns/tsMap>
+              <http://www.example.org/testbed/a12b/archive> ;
+      <http://www.w3.org/ns/prov#wasGeneratedBy>
+              <http://localhost:8182/ld4s/resource/people/manfredhauswirth> .
+
+============Platform Temporal Properties
+
+<http://www.example.org/tpp/remotea12b>
+      a       <http://spitfire-project.eu/ontology/ns/PlatformTemporalProperty> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#attachedSystem>
+              <http://www.example.org/device/1> , <http://www.example.org/device/2> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#implements>
+              <http://www.example.org/alg/18> , <http://www.example.org/alg/45> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/ownedBy>
+              <http://www.example.org/paul> , <http://www.example.org/mark> ;
+      <http://spitfire-project.eu/ontology/ns/tEnd>
+              "10321"^^<http://www.w3.org/2001/XMLSchema#long> ;
+      <http://spitfire-project.eu/ontology/ns/tStart>
+              "5800"^^<http://www.w3.org/2001/XMLSchema#long> ;
+      <http://spitfire-project.eu/ontology/ns/wornBy>
+              <http://www.example.org/people/mary> , <http://www.example.org/people/john> ;
+      <http://www.w3.org/ns/prov#wasGeneratedBy>
+              <http://localhost:8182/ld4s/resource/people/myriamleggieri> .
+
+
+============Measurement Capability
+
+<http://www.example.org/meas_capab/remotex12y>
+      a       <http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#forProperty>
+              <http://localhost:8182/ld4s/resource/property/temperature> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty>
+              <http://www.example.org/meas_prop/recall> , <http://www.example.org/meas_prop/accuracy> , <http://www.example.org/meas_prop/precision> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" .
+
+
+============Measurement Property
+
+<http://www.example.org/meas_prop/latency>
+      a       <http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty> ;
+      <http://purl.oclc.org/NET/ssnx/ssn#inCondition>
+              [ <http://spitfire-project.eu/ontology/ns/uom>
+                        <http://localhost:8182/ld4s/resource/uom/g/m3>
+              ] ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://spitfire-project.eu/ontology/ns/hasMaxValue>
+              "2" , "1"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://spitfire-project.eu/ontology/ns/hasMinValue>
+              "0.8" , "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://spitfire-project.eu/ontology/ns/uom>
+              <http://localhost:8182/ld4s/resource/uom/sec> ;
+      <http://www.w3.org/2002/07/owl#onProperty>
+              <http://spitfire-project.eu/ontology/ns/hasValueRange> .
+
+============Data Link
+
+<http://www.example.org/link/remotea12b>
+      a       <http://spitfire-project.eu/ontology/ns/DataLink> ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://purl.org/dc/terms/temporal>
+              "12-08-23T19:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/stuff/rev#hasFeedback>
+              <http://www.example.org/link/remotea12b/feedback3> , <http://www.example.org/link/remotea12b/feedback2> , <http://www.example.org/link/remotea12b/feedback1> ;
+      <http://spitfire-project.eu/ontology/ns/from>
+              <http://www.example.com/from/> ;
+      <http://spitfire-project.eu/ontology/ns/title>
+              <Sample Data Link> ;
+      <http://spitfire-project.eu/ontology/ns/to>
+              <http://www.example.com/to/> .
+
+============Link review
+
+<http://www.example.org/link/remotea12b>
+      a       <http://spitfire-project.eu/ontology/ns/LinkReview> ;
+      <http://www.w3.org/2000/01/rdf-schema#comment>
+              "Great Data Link!" ;
+      <http://purl.org/dc/terms/isPartOf>
+              "http://localhost:8182/ld4s/void" ;
+      <http://purl.org/stuff/rev#isFeedbackOf>
+              <http://localhost:8182/ld4s/link/a12b> ;
+      <http://purl.org/stuff/rev#rating>
+              "2.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+      <http://www.w3.org/ns/prov#wasGeneratedBy>
+              <http://localhost:8182/ld4s/resource/people/manfredhauswirth> .
+
+
+============Feature of Interest / Observed Property
+
+<http://localhost:8182/ld4s/resource/property/temperature>
+      <http://purl.org/dc/terms/subject>
+              <http://dbpedia.org/resource/Category:Physical_quantities> , <http://dbpedia.org/resource/Category:Fundamental_physics_concepts> , <http://dbpedia.org/resource/Category:State_functions> , <http://dbpedia.org/resource/Category:Temperature> , <http://dbpedia.org/resource/Category:Heat_transfer> , <http://dbpedia.org/resource/Category:Thermodynamics> ;
+      <http://spitfire-project.eu/ontology/ns/sameAsLink>
+              <http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2fproperty%2ftemperature_2012%2f09%2f26+08%3a00%3a08> , <http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2fproperty%2ftemperature_2012%2f09%2f26+08%3a00%3a25>  .
+
+
+============Unit of Measurement
+
+<http://localhost:8182/ld4s/resource/uom/centigrade>
+      <http://purl.oclc.org/NET/muo/muo#measuresQuality>
+              "temperature" ;
+      <http://purl.oclc.org/NET/muo/muo#prefSymbol>
+              "Â°C" ;
+      <http://spitfire-project.eu/ontology/ns/seeAlsoLink>
+              <http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2fuom%2fcentigrade_2012%2f09%2f26+08%3a00%3a33> 
+
+
+============Place
+
+<http://localhost:8182/ld4s/resource/location/patras>
+      <http://spitfire-project.eu/ontology/ns/sameAsLink>
+<http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2flocation%2fpatras_2012%2f09%2f26+08%3a00%3a43> ;
+      <http://www.geonames.org/ontology#nearbyFeatures>
+              <http://sws.geonames.org/255683/nearby.rdf> ;
+      <http://www.geonames.org/ontology#parentADM1>
+              "West Greece" ;
+      <http://www.geonames.org/ontology#parentADM2>
+              <http://sws.geonames.org/265491/> ;
+      <http://www.geonames.org/ontology#parentADM3>
+              <http://sws.geonames.org/8133690/> ;
+      <http://www.geonames.org/ontology#parentCountry>
+              <http://sws.geonames.org/390903/> , "Greece" ;
+      <http://www.geonames.org/ontology#population>
+              "163360" ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+              "38.244444" ;
+      <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+              "21.734444" .
+
+
+============People
+
+<http://localhost:8182/ld4s/resource/people/manfredhauswirth>
+      <http://spitfire-project.eu/ontology/ns/seeAlsoLink>
+              <http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2fpeople%2fmanfredhauswirth_2012%2f09%2f26+09%3a41%3a06> , <http://localhost:8182/ld4s/link/http%3a%2f%2flocalhost%3a8182%2fld4s%2fresource%2fpeople%2fmanfredhauswirth_2012%2f09%2f26+09%3a41%3a14> ;
+      <http://xmlns.com/foaf/0.1/publications>
+              <http://citeseer.rkbexplorer.com/id/resource-CS72867> .

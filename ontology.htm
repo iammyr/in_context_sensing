@@ -1,0 +1,55 @@
+<?php 
+require_once 'template.php';
+$title = 'inContext Sensing | SPITFIRE Ontology';
+printHeader($title);
+?>
+</head>
+<?php 
+$activeMenuItemNum = 3;
+$body_onload = '';
+$sidebar = '<div class="gadget">
+<h2 class="star"><span>What</span></h2>
+<div class="clr"></div>
+Ontology that leverages already existing ontology (the <a href="www.w3.org/2005/Incubator/ssn/ssnx/ssn">W3C SSN ontology</a>, among others) and ontology design patterns (<a href="http://ontologydesignpatterns.org/wiki/">the Event Model F ones</a>, among others) to enable semantic descriptions of sensors, sensor data, sensor networks, the context around them with a focus on energy saving.
+</div>
+<div class="gadget">
+<h2 class="star"><span>Why</span></h2>
+<div class="clr"></div>
+The unambiguity and schema-indepenedency features that characterize
+RDF, are the key to enable 
+<ul>
+	<li>plug-and-play sensor nodes</li>
+	<li>interoperability among different sensors.</li>
+</ul>
+Also the context around a sensor observation, can be addressed at any level of granularity and structured according to its mereology, participants and causality features.
+</div>';
+
+printBodyTop($activeMenuItemNum, $sidebar, $body_onload);
+?>
+
+              <p>
+The<span style="font-weight: bold">SPITFIRE Ontology</span> (spitf) is based on the alignment among Dolce+DnS Ultralite(dul), the W3C Semantic Sensor Network ontology (ssn) and the Event Model-F ontology (event).<br />
+Additional ontologies that have been reused and/or aligned are the Friend Of A Friend (foaf), Measurement Unit (muo), Online Presence (opo) and Association (ao) ones.
+The SPITFIRE ontology is composed by the modules showed in Figure 1. It has a focus on 
+<ul>
+<li>energy saving in building automation (the <a href="http://spitfire-project.eu">SPITFIRE consolidated use case</a>) thus allowing to monitor and describe both the structure and the performances of sensor networks and their components.</li>
+<li>modeling any kind of activity / event that has been sensed together enriched by descriptions of the surrounding environment. The SPITFIRE ontology enables a full and rich description of, not only sensor data but also the sensed event, its structure, what triggered it and its relation with other activities. An activity can be also a Presence somewhere or a Status (either online or offline).</li>
+</ul>
+The namespace for the SPITFIRE ontology is http://spitfire-project.eu/ontology/ns# (<a href="http://spitfire-project.eu/ontology.owl">OWL</a>, last update: 30 April 2012) .<br />
+Specific types and instances related to Context are defined in http://spitfire-project.eu/ontology/ns/context-types .<br />
+Specific types and instances related to Sensor Networks are defined in http://spitfire-project.eu/ontology/ns/sn-types# .<br />
+
+        
+<span style="font-weight: bold">Contacts:</span><ul>
+<li><a href="http://www.deri.ie/about/team/member/myriam_leggieri" target="_blank">Myriam Leggieri</a>,</li> 
+<li><a href="http://www.deri.ie/about/team/member/alexandre_passant" target="_blank">Alexandre Passant</a>,</li> 
+<li><a href = "http://www.deri.ie/about/team/member/manfred_hauswirth" target="_blank">Manfred Hauswirth</a>.</li>
+</ul>        
+        
+<?php 
+$copyright_uri = 'http://www.deri.ie';
+$copyright_name = 'DERI';
+printFooter($copyright_uri, $copyright_name);
+?>
+ 
+
